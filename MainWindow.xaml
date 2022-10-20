@@ -1,0 +1,50 @@
+﻿<Window x:Class="HemsidegeneratorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HemsidegeneratorWPF"
+        mc:Ignorable="d"
+        Title="Hemsidegenerator" Height="800" Width="1500">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Programmerare">
+                <Grid Background="#FFE5E5E5">
+                    <Button Name ="loadButton" Content="Ladda generell html-sida" HorizontalAlignment="Left" Margin="199,39,0,0" VerticalAlignment="Top" Click="loadButton_Click"/>
+                    <TextBox Name = "htmlText" HorizontalAlignment="Left" Margin="26,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148" Height="313" />
+                    <Label x:Name="infoAboutHowToSave" Content="Ändra i html-sidan till vänster och skriv ditt filnamn i rutan nedan. &#xA;Tryck på 'Spara hemsida' för att spara till ny fil." HorizontalAlignment="Left" Margin="199,72,0,0" VerticalAlignment="Top" Height="43"/>
+                    <Button Name ="saveButton" Content="Spara hemsida" HorizontalAlignment="Left" Margin="364,39,0,0" VerticalAlignment="Top" Click="saveButton_Click"/>
+                    <TextBox x:Name="fileNameBox" HorizontalAlignment="Left" Margin="199,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="openFile" Content="Hämta hemsida" HorizontalAlignment="Left" Margin="472,39,0,0" VerticalAlignment="Top" Click="openFile_Click"/>
+                    <TextBox x:Name="fileToLoad" HorizontalAlignment="Left" Margin="580,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
+                    <Label x:Name="infoOnChoosingFile" Content="Fyll i namnet på filen för den hemsida du vill hämta&#xA;Tryck sedan på 'Hämta hemsida' för att ladda den." HorizontalAlignment="Left" Margin="580,76,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Managers" Margin="-2,-2,-12,0">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="kurserBox" HorizontalAlignment="Left" Margin="32,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" Height="44"/>
+                    <TextBox x:Name="meddelandenBox" HorizontalAlignment="Left" Margin="32,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" Height="42"/>
+                    <Label x:Name="meddelandeLabel" Content="Meddelande" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="107"/>
+                    <Button x:Name="addMessage" Content="Lägg till" HorizontalAlignment="Left" Margin="280,134,0,0" VerticalAlignment="Top" Width="70" Click="addMessage_Click"/>
+                    <Label x:Name="kurserLabel" Content="Kurser" HorizontalAlignment="Left" Margin="32,190,0,0" VerticalAlignment="Top" Width="84"/>
+                    <Button x:Name="addKurser" Content="Lägg till" HorizontalAlignment="Left" Margin="280,216,0,0" VerticalAlignment="Top" Width="70" Click="addKurser_Click"/>
+                    <Label x:Name="infoOnAddingMessagesAndTechniques" Content="För att lägga till meddelanden och kurser till hemsidan fyll i fälten och tryck på 'lägg till'" HorizontalAlignment="Left" Margin="24,32,0,0" VerticalAlignment="Top"/>
+                    <Label Name ="addedMessages"  Content="Tillagda meddelanden" HorizontalAlignment="Left" Margin="397,103,0,0" VerticalAlignment="Top"/>
+                    <Label Name ="addedTechniques" Content="Tillagda kurser" HorizontalAlignment="Left" Margin="687,103,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="addedMessagesLabel" Content="" Background = "White" HorizontalAlignment="Left" Margin="397,134,0,0" VerticalAlignment="Top" Width="240" Height="134"/>
+                    <Label x:Name="addedTechniquesLabel" Content="" Background = "White" HorizontalAlignment="Left" Margin="687,134,0,0" VerticalAlignment="Top" Width="187" Height="134"/>
+                    <RadioButton Name ="blueButton" Content="Blå" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="602,64,0,0" VerticalAlignment="Top" Checked="blueButton_Checked"/>
+                    <RadioButton Name ="redButton" Content="Röd" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="657,64,0,0" VerticalAlignment="Top" Checked="redButton_Checked"/>
+                    <Label x:Name="infoOnChoiceOfColour" Content="Välj färg på hemsidan genom att bocka i vald färg nedan" HorizontalAlignment="Left" Margin="584,27,0,0" VerticalAlignment="Top" Width="374"/>
+                    <Label x:Name="infoOnGeneratingPage" Content="Tryck på 'ladda hemsida' för att ladda hemsidan" HorizontalAlignment="Left" Margin="942,32,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="DisplayPageLabel" HorizontalAlignment="Left" Margin="960,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" Height="268"/>
+                    <Button x:Name="loadPage" Content="Ladda hemsida" HorizontalAlignment="Left" Margin="960,80,0,0" VerticalAlignment="Top" Width="115" Click="loadPage_Click"/>
+                    <RadioButton Name ="greenButton" Content="Grön" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="708,64,0,0" VerticalAlignment="Top" Checked="greenButton_Checked"/>
+                </Grid>
+            </TabItem>
+            <Button Content="Button"/>
+        </TabControl>
+
+
+    </Grid>
+</Window>
