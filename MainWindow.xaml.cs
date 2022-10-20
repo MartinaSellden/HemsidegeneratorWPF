@@ -20,7 +20,7 @@ namespace HemsidegeneratorWPF
     {
         static List<string> messages = new List<string>();
         static List<string> techniques = new List<string>();
-        static string color = "";
+        public static string color = "black";
 
         StyledWebsiteGenerator website = new StyledWebsiteGenerator(".NET 22",color, messages, techniques);
         public MainWindow()
