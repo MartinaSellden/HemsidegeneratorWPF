@@ -33,7 +33,7 @@
                     <Label Name ="addedTechniques" Content="Tillagda kurser" HorizontalAlignment="Left" Margin="687,103,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="addedMessagesLabel" Content="" Background = "White" HorizontalAlignment="Left" Margin="397,134,0,0" VerticalAlignment="Top" Width="240" Height="134"/>
                     <Label x:Name="addedTechniquesLabel" Content="" Background = "White" HorizontalAlignment="Left" Margin="687,134,0,0" VerticalAlignment="Top" Width="187" Height="134"/>
-                    <RadioButton Name ="blueButton" Content="Blå" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="602,64,0,0" VerticalAlignment="Top" Checked="blueButton_Checked"/>
+                    <RadioButton Name ="blueButton" Content="Blue" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="602,64,0,0" VerticalAlignment="Top" Checked="blueButton_Checked"/>
                     <RadioButton Name ="redButton" Content="Röd" GroupName="ChoiceOfColour" HorizontalAlignment="Left" Margin="657,64,0,0" VerticalAlignment="Top" Checked="redButton_Checked"/>
                     <Label x:Name="infoOnChoiceOfColour" Content="Välj färg på hemsidan genom att bocka i vald färg nedan" HorizontalAlignment="Left" Margin="584,27,0,0" VerticalAlignment="Top" Width="374"/>
                     <Label x:Name="infoOnGeneratingPage" Content="Tryck på 'ladda hemsida' för att ladda hemsidan" HorizontalAlignment="Left" Margin="942,32,0,0" VerticalAlignment="Top"/>

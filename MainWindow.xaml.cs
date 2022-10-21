@@ -79,8 +79,8 @@ namespace HemsidegeneratorWPF
 
         private void loadPage_Click(object sender, RoutedEventArgs e)
         {
-            
-            DisplayPageLabel.Text = website.PrintPage();
+            StyledWebsiteGenerator nySida = new StyledWebsiteGenerator(".NET 22", color, messages, techniques);
+            DisplayPageLabel.Text = nySida.PrintPage();
         }
 
         private void redButton_Checked(object sender, RoutedEventArgs e)
